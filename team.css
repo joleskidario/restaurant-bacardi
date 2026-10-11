@@ -1,0 +1,390 @@
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section {
+    background-color: #f4ecd5;
+    min-height: calc(100vh - 157px);
+    padding: 80px 0 90px;
+}
+
+.team-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TEAM HEADING
+========================= */
+
+.team-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.team-heading span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #31442b;
+    margin-bottom: 10px;
+}
+
+.team-heading h1 {
+    font-size: 42px;
+    color: #273522;
+    margin: 0 0 15px;
+}
+
+.team-heading h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #b88a3b;
+    margin: 14px auto 0;
+}
+
+.team-heading p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TEAM CAROUSEL
+========================= */
+
+.team-carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-grid {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   TEAM CARD
+========================= */
+
+.team-card {
+    width: 240px;
+    height: 600px;
+    min-width: 240px;
+    flex-shrink: 0;
+
+    background-color: #fffdf6;
+    border-radius: 4px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   TEAM IMAGE
+========================= */
+
+.team-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   TEAM INFO
+========================= */
+
+.team-info {
+    text-align: center;
+    padding: 25px 15px 20px;
+}
+
+.team-info h2 {
+    margin: 0;
+    color: #273522;
+    font-size: 21px;
+}
+
+.team-info h3 {
+    margin: 8px 0 12px;
+    color: #b88a3b;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.team-info p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CAROUSEL BUTTONS
+========================= */
+
+.carousel-btn {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: 2px solid #31572c;
+
+    background-color: #f4ecd5;
+    color: #31572c;
+
+    font-size: 25px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+
+    z-index: 5;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background-color: #31572c;
+    color: #f4ecd5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .team-section {
+        padding: 70px 0 80px;
+    }
+
+    .team-container {
+        width: 92%;
+    }
+
+    .team-heading {
+        margin-bottom: 45px;
+    }
+
+    .team-heading h1 {
+        font-size: 36px;
+    }
+
+    .team-heading p {
+        font-size: 15px;
+    }
+
+    .team-carousel {
+        gap: 15px;
+    }
+
+    .team-grid {
+        gap: 20px;
+    }
+
+    .team-card {
+        width: 245px;
+        min-width: 245px;
+        height: 570px;
+    }
+
+    .team-image {
+        height: 350px;
+    }
+
+    .team-info {
+        padding: 22px 14px 20px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .team-section {
+        padding: 50px 0 60px;
+    }
+
+    .team-container {
+        width: 92%;
+    }
+
+    .team-heading {
+        margin-bottom: 35px;
+    }
+
+    .team-heading span {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+    }
+
+    .team-heading h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .team-heading h1::after {
+        width: 55px;
+        height: 3px;
+        margin-top: 12px;
+    }
+
+    .team-heading p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 16px;
+        padding: 0 5px;
+    }
+
+    .team-carousel {
+        gap: 8px;
+    }
+
+    .team-grid {
+        gap: 15px;
+    }
+
+    .team-card {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: 520px;
+    }
+
+    .team-image {
+        width: 100%;
+        height: 330px;
+    }
+
+    .team-info {
+        padding: 20px 12px 25px;
+    }
+
+    .team-info h2 {
+        font-size: 19px;
+    }
+
+    .team-info h3 {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        margin: 7px 0 10px;
+    }
+
+    .team-info p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        font-size: 20px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .team-section {
+        padding: 45px 0 50px;
+    }
+
+    .team-heading h1 {
+        font-size: 27px;
+    }
+
+    .team-heading span {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .team-heading p {
+        font-size: 13px;
+    }
+
+    .team-carousel {
+        gap: 5px;
+    }
+
+    .team-grid {
+        gap: 10px;
+    }
+
+    .team-card {
+        min-height: 500px;
+    }
+
+    .team-image {
+        height: 300px;
+    }
+
+    .carousel-btn {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 18px;
+    }
+
+    .team-info {
+        padding: 18px 10px 22px;
+    }
+
+    .team-info h2 {
+        font-size: 18px;
+    }
+}

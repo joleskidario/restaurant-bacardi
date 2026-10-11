@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Погледнете фотографии од Lounge Bar Bakardi, атмосферата во ресторанот и искуството што ги очекува нашите гости во Кичево.">
+  <title>Бакарди МК - Галерија</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/bakardi-cream.png">
+
+  <style>
+
+    .gallery-section {
+      padding: 50px 20px;
+      background-color:  #f4ecd5;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: -60px;
+    }
+
+    .gallery-title {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .gallery-subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-overlay span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      transform: translateY(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay span {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a class="logo" href="index.html">
+      <img src="images/bakardi-green.png" width="70" height="70" alt="Бакарди Лого"/>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html" data-translate="nav_home">Почетна</a>
+      <a href="menu.html" data-translate="nav_menu">Мени</a>
+      <a href="about.html"  data-translate="nav_about_us">За нас</a>
+      <a href="gallery.html" class="active" data-translate="nav_gallery">Галерија</a>
+      <a href="team.html" data-translate="nav_team">Тим</a>
+      <a href="contact.html" data-translate="nav_contact">Контакт</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button id="mkBtn" class="lang-btn active">MK</button>
+      <button id="enBtn" class="lang-btn">EN</button>
+    </div>
+
+    <div class="theme-switch">
+      <button id="lightBtn" class="theme-btn active">☀️</button>
+      <button id="darkBtn" class="theme-btn">🌙</button>
+    </div>
+
+
+  </div>
+</header>
+
+<main class="gallery-section">
+  <div class="gallery-container">
+    <h1 class="gallery-title" data-translate="nav_gallery">Галерија</h1>
+    <p class="gallery-subtitle" data-translate="gallery_subtitle">Погледнете ја атмосферата и нашите специјалитети</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="images/daskaa.png" alt="Мезе даска">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption1">Специјална даска</span>
+        </div>
+      </div>
+
+
+      <div class="gallery-item">
+        <img src="images/daska.png" alt="Бакарди даска">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption2">Бакарди даска</span>
+        </div>
+      </div>
+
+
+      <div class="gallery-item">
+        <img src="images/furnarinka.png" alt="Фурнаринка">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption3">Свежа фурнаринка</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/atmosvera.png" alt="Атмосфера во ресторан">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption4">Пријатна атмосфера</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/pizzza.png" alt="Италијанска пица">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption5">Вкусна пица</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/trilece.png" alt="Десерт Трилече">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption6">Сочно трилече</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/svirkq.png" alt="Жива музика и свирка">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption7">Жива музика</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/vafla.png" alt="Слатка вафла">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption8">Слатка вафла</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/furn.png" alt="Специјалитет од фурна">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption9">Специјалитет од фурна</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/cesar.png" alt="Цезар салата">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption10">Цезар салата</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/pivo.png" alt="Ладно пиво">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption11">Ладно пиво</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/valentajn.png" alt="Валентајн атмосфера">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption12">Празнична атмосфера</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/od pile mleko.png" alt="Од пиле млеко специјалитет">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption13">„Од пиле млеко“</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/toceno.png" alt="Точено пиво">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption14">Свежо точено пиво</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/patlizan.png" alt="Свежа салата со патлиџан">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption15">Свежа салата</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/kompir.png" alt="Печени компири">
+        <div class="gallery-overlay">
+          <span data-translate="gallery_caption16">Зачинети компири</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-bar">
+    <div class="footer-card">
+      <img class="logo" src="images/bakardi-cream.png" alt="Бакарди" width="40" height="120"/>
+      <p data-translate="footer_slogan">Домашна кујна во срцето на градот.</p>
+    </div>
+
+    <div class="footer-card">
+      <h4 data-translate="footer_contact">Контакт</h4>
+      <p data-translate="footer_address">Mагистрален Пат E65, Кичево</p>
+      <p>+389 78 640 222</p>
+      <p>info@bacardi.mk</p>
+    </div>
+
+    <div class="footer-card">
+      <h4 data-translate="working_hours">Работно време</h4>
+      <p data-translate="monday_saturday">Пон–Саб: 07:00–00:00</p>
+      <p data-translate="sunday">Нед: 15:00–00:00</p>
+    </div>
+  </div>
+  <p class="footer-bottom" data-translate="all_rights">&copy; 2026 Bacardi. Сите права задржани.</p>
+
+  <p class="footer-bottom">
+    <a style="color: #f4ecd5" href="privacy.html" data-translate="privacy">Приватност</a>
+  </p>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+  <p data-translate="cookies">Оваа веб страна користи колачиња за подобро корисничко искуство.</p>
+  <div class="cookie-buttons">
+    <button id="cookieAccept">Прифати</button>
+    <button id="cookieReject">Одбиј</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

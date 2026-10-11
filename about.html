@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Запознајте го Lounge Bar Bakardi – ресторан во Кичево посветен на вкусната храна, домашната атмосфера и гостопримството.">
+    <title>Бакарди МК - За нас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/bakardi-cream.png">
+
+    <style>
+        .about-hero {
+            background-color: #1b3b2b;
+            color: #ffffff;
+            text-align: center;
+            padding: 70px 20px;
+            height: 100px;
+        }
+
+        .about-hero h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-top: -10px;
+        }
+
+        .about-hero p {
+            font-size: 18px;
+            color: #d1e0d7;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+         .about-content-wrapper {
+            padding: 40px 20px;
+            background-color: #efe7d0;
+        }
+
+        .about-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-top: -20px;
+        }
+
+        .about-text {
+            flex: 1.1;
+        }
+
+        .about-image {
+            flex: 0.9;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(27, 59, 43, 0.15);
+        }
+
+        .about-text .badge {
+            background-color: rgba(255, 255, 255, 0.94);
+            color: #1b3b2b;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 30px;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .about-text h2 {
+            font-size: 34px;
+            color: #1b3b2b;
+            margin-bottom: 20px;
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a5568;
+            margin-bottom: 16px;
+        }
+
+        .about-highlights {
+            margin: 30px 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background-color: #f8f4eb;
+            border-radius: 12px;
+            border: 1px solid #eaefe9;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+        }
+
+        .highlight-item .icon {
+            font-size: 22px;
+            background-color: #e8f5e9;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        .highlight-item h4 {
+            font-size: 16px;
+            color: #1b3b2b;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+
+        .highlight-item p {
+            font-size: 13.5px;
+            color: #666;
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        .cta-wrapper {
+            margin-top: 25px;
+        }
+
+        .cta-intro-text {
+            font-size: 13.5px !important;
+            color: #718096 !important;
+            font-style: italic;
+            margin-bottom: 8px !important;
+        }
+
+        .btn-about {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #cda253;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(27, 59, 43, 0.25);
+        }
+
+        .about-features-grid {
+            max-width: 1100px;
+            margin: 80px auto 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #f7f3ea;
+            padding: 35px 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border: 1px solid #eee;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-card .icon {
+            font-size: 38px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            color: #1b3b2b;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .about-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .about-hero h1 {
+                font-size: 30px;
+            }
+
+            .about-text h2 {
+                font-size: 26px;
+            }
+
+            .about-image img {
+                height: 350px;
+            }
+
+            .about-features-grid {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="nav-bar">
+        <a class="logo" href="index.html">
+            <img src="images/bakardi-green.png" alt="Бакарди" width="70" height="70"/>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html" data-translate="nav_home">Почетна</a>
+            <a href="menu.html" data-translate="nav_menu">Мени</a>
+            <a href="about.html" class="active" data-translate="nav_about_us">За нас</a>
+            <a href="gallery.html" data-translate="nav_gallery">Галерија</a>
+            <a href="team.html" data-translate="nav_team">Тим</a>
+            <a href="contact.html" data-translate="nav_contact">Контакт</a>
+        </nav>
+
+        <div class="lang-switch">
+            <button id="mkBtn" class="lang-btn active">MK</button>
+            <button id="enBtn" class="lang-btn">EN</button>
+        </div>
+
+        <div class="theme-switch">
+            <button id="lightBtn" class="theme-btn active">☀️</button>
+            <button id="darkBtn" class="theme-btn">🌙</button>
+        </div>
+    </div>
+</header>
+
+<main class="about-section">
+
+    <section class="about-hero">
+        <h1 data-translate="about_h1">За Lounge Bar Bakardi</h1>
+        <p data-translate="about_p">Место каде што традицијата, добрите вкусови и пријатното дружење се спојуваат</p>
+    </section>
+
+    <section class="about-content-wrapper">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="badge" data-translate="about_badge">НАШАТА ПРИКАЗНА</span>
+                <h2 data-translate="about_text_h2">Домашна кујна и топла атмосфера во Кичево</h2>
+                <p data-translate="about_text_p1">
+                    <strong>Lounge Bar Bacardi</strong> е добро познато кафе‑бар‑ресторанско место сместено покрај главниот пат Е65 во Кичево, Македонија. Важи за едно од најпопуларните локални места за кафе, оброк или опуштено дружење.
+                </p>
+                <p data-translate="about_text_p2">
+                    Нашата приказна започна пред 20 години со едноставна цел – да им понудиме на гостите автентично искуство исполнето со богати вкусови. Во нашата кујна ги комбинираме традиционалните рецепти со модерни кулинарски техники, подготвувајќи го секое јадење со внимание и љубов.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="icon">🥗</span>
+                        <div>
+                            <h4 data-translate="highlight1_h4">Свежи состојки</h4>
+                            <p data-translate="highlight1_p">Секојдневно користиме свежи, внимателно избрани и локално набавени производи.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="icon">👨‍🍳</span>
+                        <div>
+                            <h4 data-translate="highlight2_h4">Врвни готвачи & Пријатна атмосфера</h4>
+                            <p data-translate="highlight2_p">Искусен тим кој готви со страст и амбиент кој прави да се чувствувате како дома.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-wrapper">
+                    <p class="cta-intro-text" data-translate="cta_text">За барем малку да ве воведеме во нашиот свет и нашите јадења со слики:</p>
+                    <a href="gallery.html" class="btn-about" data-translate="cta_gallery">Погледнете ја галеријата →</a>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="images/aboutus.jpg" alt="Бакарди Амбиент"/>
+            </div>
+        </div>
+
+        <div class="about-features-grid">
+            <div class="feature-card">
+                <span class="icon">🍕</span>
+                <h3 data-translate="feature1_h3">Разновидно мени</h3>
+                <p data-translate="feature1_p">Комбинација од свежи салати, сендвичи, пилешки јадења, паста, пици, десерти и богат избор на пијалоци и добро кафе.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="icon">😊</span>
+                <h3 data-translate="feature2_h3">Љубезен персонал</h3>
+                <p data-translate="feature2_p">Услужен и секогаш насмеан тим кој се грижи вашето престојување да биде максимално пријатно.</p>
+            </div>
+
+            <div class="feature-card">
+                <span class="icon">🚗</span>
+                <h3 data-translate="feature3_h3">Локација & Достава</h3>
+                <p data-translate="feature3_p">Практична пауза при патување покрај Е65, како и брза достава на храна директно до вашиот дом или канцеларија.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bar">
+        <div class="footer-card">
+            <img class="logo" src="images/bakardi-cream.png" alt="Бакарди" width="40" height="120"/>
+            <p data-translate="footer_slogan">Домашна кујна во срцето на градот.</p>
+        </div>
+
+        <div class="footer-card">
+            <h4 data-translate="footer_contact">Контакт</h4>
+            <p data-translate="footer_address">Mагистрален Пат E65, Кичево</p>
+            <p>+389 78 640 222</p>
+            <p>info@bacardi.mk</p>
+        </div>
+
+        <div class="footer-card">
+            <h4 data-translate="working_hours">Работно време</h4>
+            <p data-translate="monday_saturday">Пон–Саб: 07:00–00:00</p>
+            <p data-translate="sunday">Нед: 15:00–00:00</p>
+        </div>
+    </div>
+    <p class="footer-bottom" data-translate="all_rights">&copy; 2026 Bacardi. Сите права задржани.</p>
+
+    <p class="footer-bottom">
+        <a style="color: #f4ecd5" href="privacy.html" data-translate="privacy">Приватност</a>
+    </p>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+    <p data-translate="cookies">Оваа веб страна користи колачиња за подобро корисничко искуство.</p>
+    <div class="cookie-buttons">
+        <button data-translate="cookie_accept" id="cookieAccept">Прифати</button>
+        <button data-translate="cookie_reject" id="cookieReject">Одбиј</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

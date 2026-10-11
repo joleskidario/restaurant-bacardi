@@ -1,0 +1,198 @@
+.menu-section {
+    background-color: #f4ecd5;
+    min-height: calc(100vh - 72px);
+    padding: 70px 0 50px;
+}
+
+.menu-container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #263d32;
+    margin-bottom: 15px;
+}
+
+.menu-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #287a55;
+    margin: 0 auto 0;
+}
+
+.menu-card {
+    height: 145px;
+    border: 1px solid #d8cba8;
+    border-top: 3px solid #287a55;
+    padding: 22px 24px;
+
+    text-decoration: none;
+    color: #102c20;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: #287a55;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.menu-card h2 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.menu-card p {
+    margin: 0;
+    color: #66806f;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.menu-card:hover {
+    background-color: #eee3c4;
+    border-color: #287a55;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .menu-section {
+        padding: 50px 0 40px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .menu-card {
+        height: 130px;
+        padding: 20px;
+    }
+
+    .menu-card h2 {
+        font-size: 18px;
+    }
+
+    .menu-icon {
+        font-size: 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .menu-section {
+        padding: 40px 0;
+        min-height: calc(100vh - 60px);
+    }
+
+    .menu-container {
+        width: 90%;
+    }
+
+    .menu-title {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .menu-title::after {
+        width: 60px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .menu-card {
+        height: auto;
+        min-height: 110px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .menu-icon {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    .menu-card h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .menu-card p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .menu-section {
+        padding: 30px 0;
+    }
+
+    .menu-container {
+        width: 92%;
+    }
+
+    .menu-title {
+        font-size: 21px;
+    }
+
+    .menu-card {
+        min-height: 100px;
+        padding: 16px;
+    }
+
+    .menu-card h2 {
+        font-size: 17px;
+    }
+
+    .menu-card p {
+        font-size: 12px;
+    }
+
+    .menu-icon {
+        font-size: 23px;
+    }
+}
